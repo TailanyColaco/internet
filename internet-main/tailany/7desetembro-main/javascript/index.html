@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sete de Setembro</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+    <script src="teste.js"></script>
+</head>
+<body>
+   
+    <h1>INTERNET</h1>
+<h2>A História Da Internet!</h2>
+<p> A Internet surgiu a partir de um projeto da agência norte-americana Advanced Research and Projects Agency (ARPA) objetivando conectar os computadores dos seus 
+   departamentos de pesquisa. A Internet nasceu à partir da ARPANET, que interligava quatro instituições: Universidade da Califórnia, LA e Santa Bárbara; Instituto
+   de Pesquisa de Stanford e Universidade de Utah, tendo início em 1969.</p>
+<div id="textos">
+<p id="txt01"style="display:none">
+
+    Os pesquisadores e estudiosos do assunto receberam o projeto à disposição, para trabalhar. Deste estudo que perdurou na década de 70, nasceu o TCP/IP (Transmission Control 
+  Protocol / Internet Protocol), grupo de protocolos que é a base da Internet desde aqueles tempos até hoje.<br><br>
+
+    A Universidade da Califórnia de Berkley implantou os protocolos TCP/IP ao Sistema Operacional UNIX, possibilitando a integração de várias universidades à ARPANET.
+  Nesta época, início da década de 80, redes de computadores de outros centros de pesquisa foram integrados à rede da ARPA. Em 1985, a entidade americana National Science
+   Foundation (NSF) interligou os supercomputadores do seu centro de pesquisa, a NSFNET, que no ano seguinte entrou para a ARPANET. A ARPANET e a NSFNET passaram a ser as
+    duas espinhas dorsais (backbone) de uma nova rede que junto com os demais computadores ligados a elas, era a INTERNET.<br><br>
+
+     Dois anos depois, em 1988, a NSFNET passou a ser mantida com apoio das organizações IBM, MCI (empresa de telecomunicações) e MERIT (instituição responsável pela rede 
+    de computadores de instituições educacionais de Michigan), que formaram uma associação conhecida como Advanced Network and Services (ANS).<br><br>
+   
+     Em 1990 o backbone ARPANET foi desativado, criando-se em seu lugar o backbone Defense Research Internet (DRI); em 1991/1992 a ANSNET, que passou a ser o backbone 
+    principal da Internet; nessa mesma época iniciou-se o desenvolvimento de um backbone europeu (EBONE), interligando alguns países da Europa à Internet<br><br>
+   
+     A partir de 1993 a Internet deixou de ser uma instituição de natureza apenas acadêmica e passou a ser explorada comercialmente, tanto para a construção de novos 
+    backbones por empresas privadas (PSI, UUnet, Sprint,...) como para fornecimento de serviços diversos, abertura essa a nível mundial.<br><br>
+  </div>
+
+<button type="button" onclick="document.getElementById('txt01').style.display='block'">Saiba mais</button>
+<button type="button" onclick="document.getElementById('txt01').style.display='none'">Ocultar</button>
+
+ <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/download.png" width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/sir_tim_berners_lee_c.png" width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/images.png" width="400" height="200" alt=""></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal ',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+</body>
+</html>
