@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sete de Setembro</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
     <script src="teste.js"></script>
 </head>
 <body>
@@ -38,24 +43,14 @@
 <button type="button" onclick="document.getElementById('txt01').style.display='block'">Saiba mais</button>
 <button type="button" onclick="document.getElementById('txt01').style.display='none'">Ocultar</button>
 
-       
-       <!-- Slider main container -->
+ <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="SE conecte em todo lugar"><img src="/internet-main/tailany/7desetembro-main/img/internet-das-coisas
-      -iot-conexao-inteligente-e-dispositivo-de-controle-na-rede-da-industria-e-residente-em-qualquer-lugar-a-qualquer-hora-
-      qualquer-pessoa-e-qualquer-negocio-com-internet-tecnologia-de-ti-para-futurista-do-mundo_1150-61200.avif"  width="800" height="900"
-        srcset=""><p>Ses Conecte Em Qualquer Aparelho</p></div>
-    
-    <div class="Criador da internet-das-coisas-iot-conexao-inteligente-e-dispositivo-de-controle-na-rede-da-industria-e-residente-em-qualquer-lugar-a-qualquer-
-    hora-qualquer-pessoa-e-qualquer-negocio-com-internet-tecnologia-de-ti-para-futurista-do-mundo_1150-61200"><img src="/internet-main/tailany/7desetembro-main/img
-    /internet-timothy-berners-lee-2005-10-03-original2.webp" width="900" height="500"><p>Criador Da Internet</p></div>
-  
-  
-    <div class="O crescimento surpriendente da internet "><img src="/internet-main/tailany/7desetembro-main/img/o-conceito-de-sucesso-e-crescimento-de-negocios-na-
-      internet-grafico-com-crescimento-sobre-laptop_102583-6836.jpg" width="800" height="500" srcset=""><p>O Crescimento Surpreendente Da Internet</p></div>
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/download.png" width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/sir_tim_berners_lee_c.png" width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="/internet-main/tailany/7desetembro-main/img/images.png" width="400" height="200" alt=""></div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -70,5 +65,31 @@
 </div>
 
     
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal ',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
 </body>
 </html>
